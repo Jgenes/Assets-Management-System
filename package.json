@@ -1,0 +1,39 @@
+{
+  "name": "mocu-asset-management-system",
+  "version": "1.0.0",
+  "description": "Enterprise Asset Management System for Moshi Co-operative University (MoCU)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client:build": "vite build",
+    "build": "npm run client:build",
+    "dev": "node server/server.js",
+    "seed": "node server/db/seed.js",
+    "test": "node tests/lifecycle.test.js && node tests/reports.test.js && node tests/depreciation.test.js && node tests/importExport.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
+    "jsbarcode": "^3.11.6",
+    "lucide-react": "^0.475.0",
+    "postcss": "^8.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.1.0"
+  }
+}
